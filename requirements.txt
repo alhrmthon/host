@@ -3,6 +3,5 @@ requests
 wget
 telebot
 pyTelegramBotAPI
-random
 user_agent
 secrets
