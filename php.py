@@ -13,7 +13,7 @@ token = os.environ.get("TOKEN")
 app = Client("php", bot_token=token, api_id = api_id, api_hash = api_hash)
 
 
-@bot.message_handler(commands=['start'])
+@app.message_handler(commands=['start'])
 def send_wel(message):
     inline = types.InlineKeyboardMarkup(row_width=3)
     make = types.InlineKeyboardButton("صنع وهمي",callback_data="start")
@@ -21,7 +21,7 @@ def send_wel(message):
     inline.add(make,pr)
     bot.send_message(chat_id=(message.chat.id),text=f'*مرحبا بك في يا { message.from_user.first_name} في بوت صنع الاستضافه*',reply_markup=inline,parse_mode='markdown')
 
-@bot.callback_query_handler(func=(lambda call:True))
+@app.callback_query_handler(func=(lambda call:True))
 def call(call):
     if call.data == "start":
         url = 'https://dashboard.pantheon.io/register'
@@ -76,7 +76,7 @@ def call(call):
 ''',parse_mode='html')
     elif call.data == "ptmail":
         bot.edit_message_text(chat_id=(call.message.chat.id),message_id=(call.message.id),text="قم برسال الايميل")
-        @bot.message_handler(func=(lambda message:True))
+        @app.message_handler(func=(lambda message:True))
         def prmessage(message):
             if message.text:
                 pthead = {
