@@ -68,7 +68,7 @@ def call(call):
 彡 𝗘𝗠𝗔𝗜𝗟 ❥ <code>{rand}@emailnax.com</code>
 彡 𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗 ❥ <code>FN#kC_GdkecH6ja</code>
 彡 𝗪𝗘𝗕𝗦𝗜𝗧𝗘 ❥ {weblogin}
-彡 𝗩𝗜𝗥𝗨𝗦 ❥ {@VR_LA}
+彡 𝗖𝗢𝗗𝗘𝗥 ❥ @VR_LA
 =================================================
 اضغط للنسخ
 
@@ -123,7 +123,7 @@ def call(call):
 彡 𝗘𝗠𝗔𝗜𝗟 ❥ <code>{message.text}</code>
 彡 𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗 ❥ <code>FN#kC_GdkecH6ja</code>
 彡 𝗪𝗘𝗕𝗦𝗜𝗧𝗘 ❥ {weblogin}
-彡 𝗩𝗜𝗥𝗨𝗦 ❥ {@VR_LA}
+彡 𝗖𝗢𝗗𝗘𝗥 ❥ @VR_LA
 =================================================
 اضغط للنسخ
 
