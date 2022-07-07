@@ -4,6 +4,7 @@ from telebot import types
 import telebot
 from user_agent import generate_user_agent
 from pyrogram import Client, filters as ay
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
 
 api_id = int(os.environ.get("APP_ID"))
