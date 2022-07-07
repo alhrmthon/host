@@ -13,8 +13,8 @@ token = os.environ.get("TOKEN")
 app = Client("php", bot_token=token, api_id = api_id, api_hash = api_hash)
 
 
-@app.message_handler(commands=['start'])
-def send_wel(message):
+@app.on_message(ay.command("start"))
+async def start(client, message):
     inline = types.InlineKeyboardMarkup(row_width=3)
     make = types.InlineKeyboardButton("صنع وهمي",callback_data="start")
     pr = types.InlineKeyboardButton("صنع من ايميل خاص",callback_data="ptmail")
