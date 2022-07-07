@@ -4,4 +4,3 @@ wget
 telebot
 pyTelegramBotAPI
 user_agent
-secrets
