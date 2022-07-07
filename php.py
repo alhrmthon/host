@@ -3,6 +3,7 @@ import requests,random,secrets
 from telebot import types
 import telebot
 from user_agent import generate_user_agent
+from pyrogram import Client, filters as ay
 
 
 api_id = int(os.environ.get("APP_ID"))
